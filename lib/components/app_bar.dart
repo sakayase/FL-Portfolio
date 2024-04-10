@@ -10,7 +10,7 @@ AppBar? getAppBar(
   GlobalKey educationKey,
   GlobalKey contactKey,
 ) {
-  String logoUrl = 'logo1.svg';
+  String logoUrl = 'assets/logo1.svg';
 
   if (screenWidth > 1100) {
     return AppBar(

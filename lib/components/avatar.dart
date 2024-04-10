@@ -20,7 +20,7 @@ class Avatar extends StatelessWidget {
           height: 220,
           width: 220,
           color: Colors.blue,
-          child: Image.asset('avatar_placeholder.png'),
+          child: Image.asset('assets/avatar_placeholder.png'),
         ),
       ),
     );

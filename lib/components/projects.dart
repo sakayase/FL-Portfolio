@@ -32,11 +32,11 @@ class Projects extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Project(
-                  image: "project-thumbnail-1.png",
+                  image: "assets/project-thumbnail-1.png",
                   text: "HTML Tutorialdsdsddddddddddddddddddddddd",
                 ),
                 Project(
-                  image: "project-thumbnail-2.png",
+                  image: "assets/project-thumbnail-2.png",
                   text: "CSS Tutorial",
                 ),
               ],
@@ -94,7 +94,7 @@ class Project extends StatelessWidget {
                       softWrap: false,
                     ),
                   ),
-                  SvgPicture.asset("view_icon.svg"),
+                  SvgPicture.asset("assets/view_icon.svg"),
                 ],
               ),
             )

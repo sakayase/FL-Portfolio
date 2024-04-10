@@ -35,14 +35,14 @@ class Experiences extends StatelessWidget {
             children: [
               Experience(
                 title: "Fullstack developper at Qrcode-Protect",
-                icon: "qrcode-protect-icon.png",
+                icon: "assets/qrcode-protect-icon.png",
                 date: "Sept 2021 - Oct 2022",
                 content:
                     "I was hired at Qrcode Protect as a Fullstack Developper. At my arrival I had to learn Flutter and GCP, I was then tasked with developping mobile apps with Flutter and using GCP and Firebase as backend, I also had to use Flutter to build web apps.",
               ),
               Experience(
                 title: "Internship, Fullstack developper at Yooviz",
-                icon: "yooviz-icon.png",
+                icon: "assets/yooviz-icon.png",
                 date: "Mar 2021 - Oct 2021",
                 content:
                     "As a fullstack développer at Yooviz, I was asked to develop a mobile application with React Native with Expo (In order to develop for iOS without an Apple device), and a back end using NodeJS with an ExpressJS server and with KnexJs to build SQL queries.",

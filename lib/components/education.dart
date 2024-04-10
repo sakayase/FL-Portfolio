@@ -36,14 +36,14 @@ class Education extends StatelessWidget {
               Experience(
                 title: "Concepteur Developpeur d'Applications .NET",
                 date: "Feb 2024 - Oct 2025",
-                icon: "diginamic-icon.png",
+                icon: "assets/diginamic-icon.png",
                 content:
                     "Develop a secured app with UI and business components, develop a layered application. Analyse the needs of a client or a product owner and come up with solutions (mock an app, define an architecture). Deploying an application (testing, documentations, and prepare for production phase as DevOps).",
               ),
               Experience(
                 title: "Developpeur Web et Web Mobile",
                 date: "Oct 2020 - Avril 2021",
-                icon: "popschool-icon.png",
+                icon: "assets/popschool-icon.png",
                 content:
                     "Develop the front end part of an application or website (HTML/CSS, Javascript, ReactJS, React Native, Figma). Develop the back end part of an application or website (MariaDB, PHPMyAdmin, Symfony, Merise, UML).",
               ),
