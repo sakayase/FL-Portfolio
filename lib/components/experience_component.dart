@@ -113,7 +113,8 @@ class Experience extends StatelessWidget {
                             : const SizedBox.shrink(),
                         Container(
                           constraints: BoxConstraints(
-                            maxWidth: screenWidth * 0.38,
+                            maxWidth:
+                                screenWidth < 1900 ? screenWidth * 0.38 : 700,
                           ),
                           child: Text(
                             title,
