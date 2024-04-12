@@ -21,7 +21,7 @@ class Avatar extends StatelessWidget {
           width: 220,
           color: Colors.blue,
           child: Image.asset(
-            'assets/ppict.jpg',
+            'assets/ppict.png',
             fit: BoxFit.cover,
           ),
         ),
