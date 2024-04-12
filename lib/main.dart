@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: const ScrollBehavior(),
       debugShowCheckedModeBanner: false,
       title: 'Simon\'s Website',
       theme: themeData,
