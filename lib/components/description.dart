@@ -15,7 +15,7 @@ class Description extends StatelessWidget {
       child: Container(
         constraints: const BoxConstraints(maxWidth: 1000),
         child: Text(
-          "I am a full-stack software engineer with 1 year of professional experience, in mobile and web applications development. My expertise lies in crafting maintainable apps in Flutter, React or React Native, .NET, and using the Google Cloud Platform.",
+          "I am a full-stack software developer with 1 year of professional experience, in mobile and web applications development. My expertise lies in crafting maintainable apps in Flutter, React or React Native, .NET, and using the Google Cloud Platform.",
           style: Theme.of(context).textTheme.bodyLarge,
           textAlign: TextAlign.center,
         ),
