@@ -30,6 +30,7 @@ class Portfolio extends StatelessWidget {
       contactKey,
     );
 
+    ScrollController mainScrollController = ScrollController();
     return Scaffold(
       appBar: appBar,
       drawerScrimColor: Colors.transparent,
@@ -121,6 +122,7 @@ class Portfolio extends StatelessWidget {
               ),
             ),
       body: SingleChildScrollView(
+        controller: mainScrollController,
         child: SizedBox(
           width: double.infinity,
           child: SingleChildScrollView(
@@ -133,8 +135,8 @@ class Portfolio extends StatelessWidget {
                 const ButtonGroup(),
                 const Skills(),
                 Projects(
-                  key: projectsKey,
-                ),
+                    key: projectsKey,
+                    mainScrollController: mainScrollController),
                 Experiences(
                   key: experienceKey,
                 ),
