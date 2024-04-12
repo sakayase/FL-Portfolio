@@ -3,8 +3,8 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/button.dart';
 import 'package:portfolio/theme.dart';
+import 'package:portfolio/utils/open_link.dart';
 import 'package:url_launcher/link.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class ButtonGroup extends StatelessWidget {
   const ButtonGroup({super.key});
@@ -19,16 +19,6 @@ class ButtonGroup extends StatelessWidget {
       queryParameters: {'subject': 'Making Contact'},
     );
 
-    Future<void> openLink() async {
-      try {
-        if (await canLaunchUrl(url)) {
-          await launchUrl(url);
-        }
-      } catch (e) {
-        print(e);
-      }
-    }
-
     return Padding(
       padding: const EdgeInsets.symmetric(
         vertical: 20,
@@ -41,7 +31,9 @@ class ButtonGroup extends StatelessWidget {
                 Link(
                   uri: url,
                   builder: (context, Future<void> Function()? funct) => Button(
-                    onPressed: openLink,
+                    onPressed: () {
+                      openLink(url);
+                    },
                     text: 'Get In Touch',
                     textColor: mainBgColor,
                     buttonColor: mainColor,
@@ -69,7 +61,9 @@ class ButtonGroup extends StatelessWidget {
                 Link(
                   uri: url,
                   builder: (context, Future<void> Function()? funct) => Button(
-                    onPressed: openLink,
+                    onPressed: () {
+                      openLink(url);
+                    },
                     text: 'Get In Touch',
                     textColor: mainBgColor,
                     buttonColor: mainColor,
